@@ -146,6 +146,14 @@ body {
   text-transform: uppercase;
   line-height: 1;
   opacity: 0.7;
+  transition: 0.7s all ease-in-out;
+}
+
+#pInfo h1:hover {
+  opacity: 0.3;
+  cursor: pointer;
+  margin-left: 4vw;
+  transition: 0.7s all ease-in-out;
 }
 
 .infoLast {
@@ -158,4 +166,64 @@ body {
   z-index: 10;
   opacity: 0;
   display: none;
+}
+
+#aboutSection {
+  margin-top: 21vh;
+}
+
+#arow {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#aboutImage {
+  margin-left: 46%;
+}
+
+#aboutImage img {
+  width: 235px;
+}
+
+#aboutContent {
+  width: 26%;
+}
+
+#aboutContent h5 {
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+
+#aboutContent p {
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  margin: 20px 0;
+  letter-spacing: 0.01rem;
+}
+
+#aboutContent button {
+  background: transparent;
+  color: white;
+  border: 1px solid;
+  padding: 12px 25px;
+  border-radius: 50px;
+}
+
+#socialSection {
+  margin-top: 21vh;
+  padding: 30px 40px;
+  position: relative;
+  height: 100%;
+}
+
+#socialSection h5 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#sFirst {
+  opacity: 0.7;
+  font-size: 13px !important;
 }
