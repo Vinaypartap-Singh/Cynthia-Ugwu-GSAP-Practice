@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "General Sans";
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+}
+
+#hero {
+  padding: 30px 40px;
+  position: relative;
+  height: 90vh;
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#menu {
+  font-weight: normal !important;
+  font-size: 16px !important;
+}
+
+#heading {
+  margin-top: 15vh;
+}
+
+#heading h1 {
+  font-size: 10vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1;
+  opacity: 0.7;
+}
+
+#subHeading {
+  width: fit-content;
+}
+
+#subHeading h1 {
+  margin-left: 11vw;
+  margin-top: -1.3vw;
+}
+
+#subHeading h5 {
+  text-align: end;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#freelanceInfo {
+  margin-top: 12vh;
+}
+
+#freelanceInfo h5 {
+  text-align: end;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+#freeSpacing {
+  margin-top: 1vh !important;
+}
+
+#heroFooter {
+  position: absolute;
+  bottom: 1vh;
+  width: 93%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footerCol1 h4 {
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#footerCol1 h4:hover {
+  transform: 0.5s ease all;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#footerCol2 h4 {
+  display: inline-block;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#footerCol2 h4:hover {
+  transform: 0.5s ease all;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#heroFooterSvg {
+  width: 20px;
+  height: 13px;
+  padding: 6px 3px;
+  background: white;
+  color: black;
+  border-radius: 50px;
+}
