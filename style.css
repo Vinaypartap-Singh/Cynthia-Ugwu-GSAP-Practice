@@ -283,3 +283,34 @@ footer {
   gap: 30px;
   text-transform: uppercase;
 }
+
+@media screen and (min-width: 320px) and (max-width: 967px) {
+  #nav ul {
+    flex-wrap: wrap;
+    justify-content: end;
+  }
+
+  #heroFooter {
+    gap: 15px;
+  }
+
+  #aboutSection {
+    margin-top: 21vh;
+    padding: 30px 40px;
+  }
+
+  #arow {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  #aboutImage {
+    margin-left: 0;
+  }
+
+  #aboutContent {
+    width: 100%;
+  }
+}
