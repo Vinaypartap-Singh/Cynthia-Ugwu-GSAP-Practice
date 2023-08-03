@@ -64,3 +64,23 @@ document.querySelectorAll(".projectInfo").forEach(function (element) {
     });
   });
 });
+
+document.getElementById("menu").addEventListener("click", () => {
+  var time = gsap.timeline();
+  time.to(document.querySelector("#menu"), {
+    opacity: 0,
+    display: "none",
+  });
+
+  time.to(document.querySelectorAll(".menuItem"), {
+    y: 10,
+    duration: 0.5,
+    opacity: 1,
+    stagger: 0.4,
+  });
+
+  time.to(document.querySelectorAll(".menuItem"), {
+    y: 0,
+    stagger: 0.2,
+  });
+});

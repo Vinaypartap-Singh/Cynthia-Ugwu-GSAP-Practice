@@ -36,9 +36,29 @@ body {
   font-weight: bold;
 }
 
+#nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+#nav ul li {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menuItem {
+  opacity: 0;
+  cursor: pointer;
+}
+
 #menu {
   font-weight: normal !important;
   font-size: 16px !important;
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 .bounding {
