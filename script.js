@@ -37,3 +37,29 @@
       ease: Expo.easeInOut,
     });
 })();
+
+document.querySelectorAll(".projectInfo").forEach(function (element) {
+  var rotate = 0;
+  var rotateDifference = 0;
+
+  element.addEventListener("mousemove", function (details) {
+    var diff = details.clientY - element.getBoundingClientRect().top;
+    rotateDifference = details.clientX - rotate;
+    rotate = details.clientX;
+    gsap.to(element.querySelector("img"), {
+      opacity: 1,
+      display: "block",
+      ease: Power1,
+      top: diff,
+      left: details.clientX,
+      rotate: gsap.utils.clamp(-20, 20, rotateDifference),
+    });
+  });
+
+  element.addEventListener("mouseleave", function (details) {
+    gsap.to(element.querySelector("img"), {
+      opacity: 0,
+      display: "none",
+    });
+  });
+});
