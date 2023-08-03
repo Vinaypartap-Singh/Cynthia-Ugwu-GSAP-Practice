@@ -46,12 +46,13 @@ document.querySelectorAll(".projectInfo").forEach(function (element) {
     var diff = details.clientY - element.getBoundingClientRect().top;
     rotateDifference = details.clientX - rotate;
     rotate = details.clientX;
+
     gsap.to(element.querySelector("img"), {
       opacity: 1,
       display: "block",
       ease: Power1,
-      top: diff,
-      left: details.clientX,
+      top: diff - "50px",
+      left: details.clientX - 200,
       rotate: gsap.utils.clamp(-20, 20, rotateDifference),
     });
   });
